@@ -41,7 +41,7 @@ namespace EstruturaDeDados.controller
             string retorno = "";
             for(int i = 0; i < contador; i++)
             {
-                retorno += $"{i + 1} - {dados[contador]}";
+                retorno += $"{i + 1} - {dados[i]}\n";
             }
             return retorno;
         }
