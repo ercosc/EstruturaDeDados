@@ -23,7 +23,7 @@ namespace EstruturaDeDados.controller
             if(contador < tamanho)
             {
             dados[contador++] = x;
-            return $"O numero {x} foi adicionado na fila na posição {contador - 1}";
+            return $"O numero {x} foi adicionado na fila na posição {contador}";
             } else
             {
                 return $"A fila está cheia!";

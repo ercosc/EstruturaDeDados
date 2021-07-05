@@ -27,7 +27,7 @@ namespace EstruturaDeDados.controller
             else
             {
                 dados[contador++] = x;
-                return $"Número {x} adicionado na Pilha na posição {contador}"
+                return $"Número {x} adicionado na Pilha na posição {contador}";
             }
         }
     }
