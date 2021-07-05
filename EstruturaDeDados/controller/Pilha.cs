@@ -35,5 +35,15 @@ namespace EstruturaDeDados.controller
             contador--;
             return $"Elemento removido";
         }
+
+        public string Listar()
+        {
+            string retorno = "";
+            for(int i = 0; i < contador; i++)
+            {
+                retorno += $"{i + 1} - {dados[contador]}";
+            }
+            return retorno;
+        }
     }
 }

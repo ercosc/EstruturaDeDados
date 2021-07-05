@@ -25,6 +25,7 @@ namespace EstruturaDeDados.controller
             Console.WriteLine(p.Save(20));
             Console.WriteLine(p.Save(24));
             Console.WriteLine(p.Save(2));
+            Console.WriteLine(p.Listar());
         }
 
     }
