@@ -30,5 +30,10 @@ namespace EstruturaDeDados.controller
                 return $"Número {x} adicionado na Pilha na posição {contador}";
             }
         }
+        public string Pop()
+        {
+            contador--;
+            return $"Elemento removido";
+        }
     }
 }
