@@ -10,15 +10,15 @@ namespace EstruturaDeDados.controller
     {
         public Controller()
         {
-            Fila f = new Fila(new int[2]);
+            Fila f = new Fila(new int[20]);
             Console.WriteLine(f.Save(int.Parse(Console.ReadLine())));
             Console.WriteLine(f.Save(int.Parse(Console.ReadLine())));
             Console.WriteLine(f.Listar());
+            Console.WriteLine(f.Save(int.Parse(Console.ReadLine())));
+            Console.WriteLine(f.Listar());
+            Console.WriteLine(f.Save(int.Parse(Console.ReadLine())));
             Console.WriteLine(f.Remove());
             Console.WriteLine(f.Listar());
-            Console.WriteLine(f.Save(int.Parse(Console.ReadLine())));
-            Console.WriteLine(f.Listar());
-            Console.WriteLine(f.Save(int.Parse(Console.ReadLine())));
 
         }
 

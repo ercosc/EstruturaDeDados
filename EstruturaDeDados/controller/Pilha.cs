@@ -8,5 +8,14 @@ namespace EstruturaDeDados.controller
 {
     class Pilha
     {
+        private int contador;
+        private int[] dados;
+        private int tamanho;
+        public Pilha(int[] dados)
+        {
+            contador = 0;
+            tamanho = dados.Length;
+            this.dados = dados;
+        }
     }
 }
