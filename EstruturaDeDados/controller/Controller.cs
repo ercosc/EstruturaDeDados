@@ -23,6 +23,7 @@ namespace EstruturaDeDados.controller
             Pilha p = new Pilha(new int[3]);
             Console.WriteLine(p.Save(2));
             Console.WriteLine(p.Save(20));
+            Console.WriteLine(p.Pop());
             Console.WriteLine(p.Save(24));
             Console.WriteLine(p.Save(2));
             Console.WriteLine(p.Listar());

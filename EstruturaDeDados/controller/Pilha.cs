@@ -32,7 +32,7 @@ namespace EstruturaDeDados.controller
         }
         public string Pop()
         {
-            contador--;
+            dados[contador--] = 0;
             return $"Elemento removido";
         }
 
