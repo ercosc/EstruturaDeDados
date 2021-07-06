@@ -36,7 +36,7 @@ namespace EstruturaDeDados.controller
             Console.WriteLine(le.Add(40));
             Console.WriteLine(le.Add(40));
             Console.WriteLine(le.Add(40));
-
+            Console.WriteLine(le.Listar());
         }
 
     }
