@@ -35,5 +35,23 @@ namespace EstruturaDeDados.controller
             }
             return node.prox.valor;
         }
+        public string Listar()
+        {
+            string retorno = "";
+            int contador = 1;
+            Node n = node;
+            if(n == null)
+            {
+                retorno += $"A lista está vazia;";
+            } else
+            {
+                do
+                {
+                    retorno += $"{contador++} - {node.valor}\n";
+                    n = n.prox;
+                } while (n == null);
+            }
+            return retorno;
+        }
     }
 }
