@@ -21,6 +21,10 @@ namespace EstruturaDeDados.controller
             node = new Node(x);
             node.prox = inicio;
             inicio = node;
+        }
+        public void AddFinal(int x)
+        {
+            node = new Node(x);
             
         }
         public string Listar()
