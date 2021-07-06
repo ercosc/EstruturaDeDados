@@ -16,43 +16,24 @@ namespace EstruturaDeDados.controller
             {
                 node = new Node(x);
                 return node.valor;
-
             }
             else
             {
-                Node n = PercorrerNo(node);
-                n.prox = new Node(x);
-                return n.prox.valor;
+                return AddProx(x, node);
             }
-        }
-        public Node PercorrerNo(Node n)
-        {
-            while (n.prox != null)
-            {
-                n = node.prox;
-            }
-            return n;
         }
 
-        public string Listar()
+        private int AddProx(int x, Node node)
         {
-            string retorno = "";
-            Node n = node;
-            int contador = 1;
-            if (n == null)
+            if (node.prox == null)
             {
-                retorno += $"A lista está vazia";
+                node.prox = new Node(x);
             }
             else
             {
-                do
-                {
-                    retorno = $"{contador++} - {n.valor}";
-                    n = n.prox;
-                }
-                while (n.prox != null);
+                AddProx(x, node.prox);
             }
-            return retorno;
+            return node.prox.valor;
         }
     }
 }

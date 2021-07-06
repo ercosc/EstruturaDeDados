@@ -20,13 +20,21 @@ namespace EstruturaDeDados.controller
             //Console.WriteLine(f.Remove());
             //Console.WriteLine(f.Listar());
 
-            Pilha p = new Pilha(new int[3]);
-            Console.WriteLine(p.Save(2));
-            Console.WriteLine(p.Save(20));          
-            Console.WriteLine(p.Pop());
-            Console.WriteLine(p.Save(24));
-            Console.WriteLine(p.Save(2));
-            Console.WriteLine(p.Listar());
+            //Pilha p = new Pilha(new int[3]);
+            //Console.WriteLine(p.Save(2));
+            //Console.WriteLine(p.Save(20));          
+            //Console.WriteLine(p.Pop());
+            //Console.WriteLine(p.Save(24));
+            //Console.WriteLine(p.Save(2));
+            //Console.WriteLine(p.Listar());
+
+            ListaEncadeada le = new ListaEncadeada();
+
+            Console.WriteLine(le.Add(20));
+            Console.WriteLine(le.Add(30));
+            Console.WriteLine(le.Add(40));
+
+
         }
 
     }
