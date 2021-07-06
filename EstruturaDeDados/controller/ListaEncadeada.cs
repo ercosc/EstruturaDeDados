@@ -16,12 +16,12 @@ namespace EstruturaDeDados.controller
             inicio = null;
         }
 
-        public int Add(int x)
+        public void AddInicio(int x)
         {
             node = new Node(x);
             node.prox = inicio;
             inicio = node;
-            return node.valor;
+            
         }
         public string Listar()
         {

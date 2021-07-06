@@ -30,12 +30,11 @@ namespace EstruturaDeDados.controller
 
             ListaEncadeada le = new ListaEncadeada();
 
-            Console.WriteLine(le.Add(20));
-            Console.WriteLine(le.Listar());
-            Console.WriteLine(le.Add(30));
-            Console.WriteLine(le.Add(40));
-            Console.WriteLine(le.Add(40));
-            Console.WriteLine(le.Add(40));
+            Console.WriteLine(le.Listar()); 
+            le.AddInicio(10);
+            le.AddInicio(20);
+            le.AddInicio(30);
+            le.AddInicio(40);
             Console.WriteLine(le.Listar());
         }
 
