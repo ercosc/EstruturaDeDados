@@ -18,13 +18,14 @@ namespace EstruturaDeDados.controller
         }
         public void AddInicio(int x)
         {
-            if(tamanho == 0)
+            if (tamanho == 0)
             {
                 no = new Node();
                 no.valor = x;
                 inicio = no;
                 fim = no;
-            } else
+            }
+            else
             {
                 no = new Node();
                 no.valor = x;
@@ -35,11 +36,39 @@ namespace EstruturaDeDados.controller
         }
         public void AddFim(int x)
         {
-
+            if (tamanho == 0)
+            {
+                no = new Node();
+                no.valor = x;
+                inicio = no;
+                fim = no;
+            }
+            else
+            {
+                no = new Node();
+                no.valor = x;
+                fim.prox = no;
+                fim = no;
+            }
+            tamanho++;
         }
-        public string listar()
+        public string Listar()
         {
             string resultado = "";
+            no = inicio;
+            int contador = 1;
+            if (tamanho == 0)
+            {
+                resultado += "A lista está vazia";
+            }
+            else
+            {
+                while (no != null)
+                {
+                    resultado += $"{contador++} - {no.valor}\n";
+                    no = no.prox;
+                }
+            }
             return resultado;
         }
 
