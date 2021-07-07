@@ -18,7 +18,20 @@ namespace EstruturaDeDados.controller
         }
         public void AddInicio(int x)
         {
-
+            if(tamanho == 0)
+            {
+                no = new Node();
+                no.valor = x;
+                inicio = no;
+                fim = no;
+            } else
+            {
+                no = new Node();
+                no.valor = x;
+                no.prox = inicio;
+                inicio = no;
+            }
+            tamanho++;
         }
         public void AddFim(int x)
         {
