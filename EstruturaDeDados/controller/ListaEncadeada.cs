@@ -71,6 +71,23 @@ namespace EstruturaDeDados.controller
             }
             return resultado;
         }
-
+        public void Remover(int x)
+        {
+            if (tamanho == 0)
+            {
+                Console.WriteLine("A lista já está vazia!");
+            }
+            else if (tamanho == 1)
+            {
+                no = new Node();
+                inicio = no;
+                fim = inicio;
+                tamanho--;
+            }
+            else
+            {
+                
+            }
+        }
     }
 }
