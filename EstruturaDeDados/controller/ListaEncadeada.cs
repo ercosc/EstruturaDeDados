@@ -8,42 +8,13 @@ namespace EstruturaDeDados.controller
 {
     class ListaEncadeada
     {
-        private Node inicio;
-        private Node node;
-        
+        private Node inicio, fim, no;
+        private int tamanho;
         public ListaEncadeada()
         {
-            inicio = null;
+            inicio = new Node();
         }
+        
 
-        public void AddInicio(int x)
-        {
-            node = new Node(x);
-            node.prox = inicio;
-            inicio = node;
-        }
-        public void AddFinal(int x)
-        {
-            node = new Node(x);
-            
-        }
-        public string Listar()
-        {
-            Node n = node;
-            string retorno = "";
-            int contador = 1;
-            if(node == null)
-            {
-                retorno += $"A lista está vazia.";
-            } else
-            {
-                while (n != null)
-                {
-                    retorno += $"{contador++} - {n.valor}\n";
-                    n = n.prox;
-                }
-            }
-            return retorno;
-        }
     }
 }

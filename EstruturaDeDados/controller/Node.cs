@@ -11,9 +11,5 @@ namespace EstruturaDeDados.controller
         public int valor;
         public Node prox;
 
-        public Node(int valor)
-        {
-            this.valor = valor;
-        }
     }
 }
