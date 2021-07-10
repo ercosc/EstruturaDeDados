@@ -8,8 +8,8 @@ namespace EstruturaDeDados.controller
 {
     class Node
     {
-        public int valor;
-        public Node prox;
+        public int valor { get; set; }
+        public Node prox { get; set; }
 
     }
 }

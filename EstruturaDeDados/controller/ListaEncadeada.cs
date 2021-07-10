@@ -22,15 +22,15 @@ namespace EstruturaDeDados.controller
             {
                 no = new Node();
                 no.valor = x;
-                inicio = no;
+                inicio.prox = no;
                 fim = no;
             }
             else
             {
                 no = new Node();
                 no.valor = x;
-                no.prox = inicio;
-                inicio = no;
+                no.prox = inicio.prox;
+                inicio.prox = no;
             }
             tamanho++;
         }
@@ -65,29 +65,41 @@ namespace EstruturaDeDados.controller
             {
                 while (no != null)
                 {
-                    resultado += $"{contador++} - {no.valor}\n";
+                    if (!(no == inicio))
+                    {
+                        resultado += $"{contador++} - {no.valor}\n";
+                    }
                     no = no.prox;
                 }
             }
             return resultado;
         }
-        public void Remover(int x)
+        public void RemoverPorPosicao(int pos)
         {
-            if (tamanho == 0)
+            if (pos <= tamanho)
             {
-                Console.WriteLine("A lista já está vazia!");
-            }
-            else if (tamanho == 1)
-            {
-                no = new Node();
-                inicio = no;
-                fim = inicio;
-                tamanho--;
-            }
-            else
-            {
-                
+                if (pos == 1)
+                {
+                    inicio.prox = inicio.prox.prox;
+                    tamanho--;
+                }
+                else
+                {
+                    no = inicio;
+                    for (int i = 1; i < pos; i++)
+                    {
+                        no = no.prox;
+                    }
+                    if(pos == tamanho)
+                    {
+                        no.prox = null;
+                        tamanho--;
+                    } 
+                    no.prox = no.prox.prox;
+                }
             }
         }
+
+
     }
 }

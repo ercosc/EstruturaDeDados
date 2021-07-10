@@ -28,19 +28,17 @@ namespace EstruturaDeDados.controller
             //Console.WriteLine(p.Save(2));
             //Console.WriteLine(p.Listar());
 
-            ListaEncadeada le = new ListaEncadeada();
-
-            Console.WriteLine(le.Listar());
-            le.AddFim(100);
-            le.AddInicio(5);
-            le.AddFim(200);
-            Console.WriteLine(le.Listar());
-            le.AddInicio(10);
-            le.AddFim(300);
-            le.AddInicio(15);
-            le.AddFim(100);
-            le.AddInicio(20);
-            Console.WriteLine(le.Listar());
+            //ListaEncadeada le = new ListaEncadeada();
+             
+            //le.AddInicio(5);
+            //le.AddInicio(10);
+            //Console.WriteLine(le.Listar());
+            //le.AddInicio(15);
+            //le.AddInicio(20);
+            //le.AddInicio(25);
+            //Console.WriteLine(le.Listar());
+            //le.RemoverPorPosicao(4);
+            //Console.WriteLine(le.Listar());
 
         }
 
